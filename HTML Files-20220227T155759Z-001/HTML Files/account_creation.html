@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Create Your Account </title>
+    <link rel="stylesheet" href="style2.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <script>  
+    function validateForm() {  
+    //collect form data in JavaScript variables  
+    var pw1 = document.getElementById("pswd1").value;  
+    var pw2 = document.getElementById("pswd2").value;  
+    
+    //check empty password field  
+    if(pw1 == "") {  
+      document.getElementById("message1").innerHTML = "**Fill the password please!";  
+      return false;  
+    }  
+    
+    //check empty confirm password field  
+    if(pw2 == "") {  
+      document.getElementById("message2").innerHTML = "**Enter the password please!";  
+      return false;  
+    }   
+     
+    //minimum password length validation  
+    if(pw1.length < 8) {  
+      document.getElementById("message1").innerHTML = "**Password length must be atleast 8 characters";  
+      return false;  
+    }  
+  
+    //maximum length of password validation  
+    if(pw1.length > 15) {  
+      document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";  
+      return false;  
+    }  
+    
+    if(pw1 != pw2) {  
+      document.getElementById("message2").innerHTML = "**Passwords are not same";  
+      return false;  
+    } else {  
+      alert ("Your password created successfully");  
+      document.write("JavaScript form has been submitted successfully");  
+    }  
+ }  
+    </script>     
+<body>
+  <div class="container">
+    <div class="title">Account Creation</div>
+    <div class="content">
+      <form onsubmit ="return validateForm()" action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">USN(username)</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">College Email Id</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span id = "message1" class="details">Password</span>
+            <input type="text" id="pswd1" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span id = "message2" class="details">Confirm Password</span>
+            <input type="text" id="pswd2" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Other</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

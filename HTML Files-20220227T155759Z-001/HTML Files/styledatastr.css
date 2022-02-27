@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.container{
+    position:relative;
+    width: 1200px;
+    height: 1000px;
+    margin: 130px auto;
+}
+
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(550px - 30px);
+    background:black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container .box .content h4{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    padding-top: 40px;
+    color:yellow;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .box .content img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container .box1{
+    position: relative;
+    width: 110px;
+    height: 70px;
+    background: lime;
+    float: left;
+    margin: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box1 .content h4{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    padding: 2px;
+    color:#fff;
+    font-size: 45px;
+}
+.container .box2{
+    position: relative;
+    width: 110px;
+    height: 70px;
+    background:lightsalmon;
+    float: left;
+    margin: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box2 .content h4{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    padding: 2px;
+    color:#fff;
+    font-size: 45px;
+}
+.container .box0{
+    position: relative;
+    width: 1130px;
+    height: 40px;
+    background:cyan;
+    float: left;
+    margin: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box0 .content h4{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    padding: 2px;
+    color: black;
+    font-size: 27px;
+}
